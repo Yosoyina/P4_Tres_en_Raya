@@ -17,6 +17,13 @@ public class P4_Tres_en_Raya {
 		int contJ1 = 0;
 		int contJ2 = 0;
 		
+		// Apartado del Tablero del Tres en raya
+		
+		String [][] Tabla = {{"-", "-", "-"},
+				             {"-", "-", "-"},
+				             {"-", "-", "-"}};
+		
+		
 		
 		System.out.println(" ______________________________________________________");
 		System.out.println("|                                                      |");
@@ -29,7 +36,7 @@ public class P4_Tres_en_Raya {
 		System.out.println("|          Introducce el nombre al Jugador 1           |");
 		System.out.println("|______________________________________________________|");
 		
-		Jugador1 = teclado.next();
+		Jugador1 = teclado.next(); // El jugador 1 introuducce su nombre
 		
 		
 		System.out.println(" ______________________________________________________");
@@ -37,7 +44,7 @@ public class P4_Tres_en_Raya {
 		System.out.println("|          Introducce el nombre al Jugador 2           |");
 		System.out.println("|______________________________________________________|");
 		
-		Jugador2 = teclado.next();
+		Jugador2 = teclado.next(); // El jugador 2 introuducce su nombre
 		
 		
 		
