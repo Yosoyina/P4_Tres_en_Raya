@@ -13,6 +13,7 @@ public class P4_Tres_en_Raya {
 		
 		String Jugador1;
 		String Jugador2;
+		String TurnoJug = "";
 		
 		// Apartado de los contadores de los jugadores 
 		
@@ -60,10 +61,12 @@ public class P4_Tres_en_Raya {
 		
 		if(moneda == 1) {
 			
-			System.out.println(" ______________________");
-			System.out.println("|                      |");
-			System.out.println("|    Ha salido Cara    |");
-			System.out.println("|______________________|");
+			TurnoJug = Jugador1;
+			
+			System.out.println(" ____________________________________");
+			System.out.println("|                                    |");
+			System.out.println("|    Ha salido Cara " + Jugador1 +  "|");
+			System.out.println("|____________________________________|");
 			
 		}
 		
@@ -71,10 +74,12 @@ public class P4_Tres_en_Raya {
 		
 		else if (moneda == 2) {
 			
-			System.out.println(" ______________________");
-			System.out.println("|                      |");
-			System.out.println("|    Ha salido Cruz    |");
-			System.out.println("|______________________|");
+			TurnoJug = Jugador2;
+			
+			System.out.println(" ____________________________________");
+			System.out.println("|                                    |");
+			System.out.println("|    Ha salido Cruz " + Jugador2 +"  |");
+			System.out.println("|____________________________________|");
 			
 		}
 		
@@ -94,14 +99,27 @@ public class P4_Tres_en_Raya {
 			
 			// En este bucle el recorrido for mostramos la tabla actual de tres en raya
 			
-			for (int i = 0; i < Tabla.length; i++) {
-				for (int j = 0; j < Tabla[i].length; j++) {
+			for (int filas = 0; filas < Tabla.length; filas++) {
+				for (int columnas = 0; columnas < Tabla[filas].length; columnas++) {
 					
-					System.out.print(Tabla[i][j] + " ");
+					System.out.print(Tabla[filas][columnas] + " ");
 					
 				}
 				System.out.println("");
 			} // acaba el recorrido de la tabal del tres en raya
+			
+			System.out.println("");
+			
+			System.out.println(TurnoJug + "este jugador comienza ");
+			
+			boolean Partida = false;
+			
+			while(!Partida) {
+				
+				
+				
+			}
+			
 			
 			
 		} // acaba el bucle while
