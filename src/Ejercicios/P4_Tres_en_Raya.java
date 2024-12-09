@@ -56,6 +56,8 @@ public class P4_Tres_en_Raya {
 		
 		// Aparatado de la Condicion ( Cara ) que es igual a 1
 		
+		moneda = numAl.nextInt(2)+1; //para el numero aleatorio
+		
 		if(moneda == 1) {
 			
 			System.out.println(" ______________________");
@@ -76,9 +78,6 @@ public class P4_Tres_en_Raya {
 			
 		}
 		
-		
-		
-	
 		
 		
 		
