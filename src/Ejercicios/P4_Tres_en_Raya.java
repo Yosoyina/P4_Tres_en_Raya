@@ -58,8 +58,6 @@ public class P4_Tres_en_Raya {
 		
 		// Aparatado de la Condicion ( Cara ) que es igual a 1
 		
-		moneda = numAl.nextInt(2)+1; //para el numero aleatorio
-		
 		if(moneda == 1) {
 			
 			System.out.println(" ______________________");
@@ -87,23 +85,27 @@ public class P4_Tres_en_Raya {
 		
 		System.out.println(" ______________________________________________________");
 		System.out.println("|                                                      |");
-		System.out.println("|          Muestra de Tabla del tres en Raya           |");
+		System.out.println("|            Tabla Actual del tres en Raya             |");
 		System.out.println("|______________________________________________________|");
 		
 		System.out.println("");
 		
-		for (int i = 0; i < Tabla.length; i++) {
-			for (int j = 0; j < Tabla[i].length; j++) {
-				
-				System.out.print(Tabla[i][j] + " ");
-				
-			}
-			System.out.println("");
-		}
-		
-		
-		
-		
+		while(true) { // bucle verdadero para los turnos de cada jugador 
+			
+			// En este bucle el recorrido for mostramos la tabla actual de tres en raya
+			
+			for (int i = 0; i < Tabla.length; i++) {
+				for (int j = 0; j < Tabla[i].length; j++) {
+					
+					System.out.print(Tabla[i][j] + " ");
+					
+				}
+				System.out.println("");
+			} // acaba el recorrido de la tabal del tres en raya
+			
+			
+		} // acaba el bucle while
+			
 		
 	}
 
